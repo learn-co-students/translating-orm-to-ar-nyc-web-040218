@@ -1,3 +1,4 @@
+require "pry"
 class Dog < ActiveRecord::Base
 
   # attr_accessor :name, :breed, :id
@@ -14,10 +15,10 @@ class Dog < ActiveRecord::Base
   # end
 end
 
-# dog1 = Dog.new("maru", "puppy")
-# dog2 = Dog.new("roku", "siberian")
-#
-# dog1.save
-# dog2.save
-#
-# binding.pry
+dog1 = Dog.new("maru", "puppy")
+dog2 = Dog.new("roku", "siberian")
+
+dog1.save
+dog2.save
+
+binding.pry
